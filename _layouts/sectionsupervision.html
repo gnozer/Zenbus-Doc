@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+        {% if site.lang == "fr" %}
+            {% if page.fr_metatags %} <meta name="keywords" content="{{page.fr_metatags}}">{% endif %}
+        {% elsif site.lang== "en" %}
+            {% if page.en_metatags %} <meta name="keywords" content="{{page.en_metatags}}">{% endif %}
+        {% endif %}
+		<link rel="icon" type="image/png" href="/images/logo_zendoc.png" />
+		<title>
+            {% if site.lang == "fr" %}
+                {% if page.fr_title %}{{page.fr_title}}{% else %} Zendoc'{% endif %}
+            {% elsif site.lang== "en" %}
+                {% if page.en_title %}{{page.en_title}}{% else %} Zendoc'{% endif %}
+            {% endif %}
+        </title>
+		 
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/css/style.css">
+		
+		<!-- Compiled and minified JavaScript libs -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48957810-4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-48957810-4');
+        </script>
+	</head>
+	<body>
+		{% include menu.html %}
+		<section id="supervision" class="content">
+		 	 {% include menusupervision.html %}
+			 {{ content }}
+		</section>
+        <script src="/js/nav.min.js"></script>
+        <script src="/js/simple-search/main.js"></script>
+	 </body>
+</html>
