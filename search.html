@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<span id="searchContent"></span>
+<div id="searchContainer">
+</div>
+
+<script>
+    callback = function(){
+        var 
+        url = new URL(window.location.href),
+        c = url.searchParams.get("s"),
+        results = FUSE.search(c);
+
+        $("#searchContent").html(c);
+        
+        results.forEach(function(result){
+            $("#searchContainer").append("<a href='"+result.path+"'>"+result.title +"</a><br>");
+        });
+    }
+
+</script>

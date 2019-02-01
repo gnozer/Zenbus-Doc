@@ -1,0 +1,17 @@
+*** CONFIGURATION ***
+//Jekyll installation
+https://jekyllrb.com/docs/installation/
+
+Then, in project folder, you'll need to run that once to manage plugin dependencies (i18n...):
+$ bundle install
+
+//Build, run and watch
+$ bundle exec jekyll serve --watch
+
+// Qu'est ce qu'un article ? 
+1 article:
+- 1 contenu par langue /i18n/{lang}/{nomdelarticle}.md
+- 1 page html par vue (default et article)
+- 1 page est constituées de metadonnées
+    - article: titre par langue
+    - default: titre par langue, tags par langue, date
