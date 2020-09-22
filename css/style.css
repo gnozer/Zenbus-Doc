@@ -487,6 +487,12 @@ blockquote.gold {
 	background-size:1080px 60px;
 }
 
+.stop_icon {
+	background-image: url(../images/traveller_mobile_icon_teasers_icon_set.png);
+	background-position:0 0;
+	background-size:720px 60px;
+}
+
 .unfavorite_stop_icon {
 	background-image: url(../images/traveller_mobile_icon_teasers_icon_set.png);
 	background-position:0 0;
@@ -521,6 +527,12 @@ blockquote.gold {
 	background-image: url(../images/traveller_mobile_icon_teasers_icon_set.png);
 	background-position:-300px 0;
 	background-size:720px 60px;
+}
+
+.line_icon {
+	background-image: url(../images/traveller_mobile_icon_menu_icons.png);
+	background-position:-60px 0;
+	background-size:240px 120px;
 }
 
 .favorite_line_icon {
@@ -623,6 +635,30 @@ blockquote.gold {
 	background-image: url(../images/traveller_mobile_icon_menu.png);
 	background-position:0 0;
 	background-size:60px 60px;
+}
+
+.plus_menu {
+	background-image: url(../images/traveller_mobile_plus.PNG);
+	background-position:0 0;
+	background-size:60px 60px;
+}
+
+.minus_menu {
+	background-image: url(../images/traveller_mobile_minus.PNG);
+	background-position:0 0;
+	background-size:60px 60px;
+}
+
+.display_lines {
+	background-image: url(../images/traveller_mobile_iconswitchIcons.png);
+	background-position:0 10px;
+	background-size:90px 45px;
+}
+
+.display_stpoints {
+	background-image: url(../images/traveller_mobile_iconswitchIcons.png);
+	background-position:-40px 10px;
+	background-size:90px 40px;
 }
 
 .plus-and_minus-icon {
