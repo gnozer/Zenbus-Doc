@@ -16,8 +16,11 @@
 					</p>
 				</div>
 			</div>
-			<blockquote>
+			<blockquote class="gold">
 				Chaque smartphone possède un identifiant unique, l'IMEI. Pour le connaitre, il suffit de taper <span class="imp">*#06#</span> lors de la composition d'un numéro.
+			</blockquote>
+			<blockquote>
+				<b>Attention, depuis sa version 10, Android n'autorise plus les applications à accéder à l'IMEI.</b> Dans ce cas, nous utilisons l'ANDROID_ID du terminal. Pour l'obtenir, il suffit de lancer Zenbus Driver qui affichera l'identifiant à autoriser. 
 			</blockquote>
 		</div>
 		<div id="driver-installation-cat2" class="section scrollspy">
