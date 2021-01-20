@@ -16,8 +16,9 @@
 		<!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+        <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48957810-4"></script>
@@ -27,20 +28,29 @@
           gtag('js', new Date());
           gtag('config', 'UA-48957810-4');
         </script>
+		
+		<style>
+		img{
+				display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			  width: 50%;
+			}
+			
+		</style>
 	</head>
 	<body>
 		{% include menu.html %}
 		
 		<section class="content">
-
+			{% include menumore.html %}
       	{{ content }}
 
     	</section>
         
-	 </body>
+	 </body> 	
 
-        <script src="/js/nav.min.js"></script>
-
-        <script src="/js/simple-search/main.js"></script>
+	<script src="/js/nav.min.js"></script>
+    <script src="/js/simple-search/main.js"></script>
    
 </html>
